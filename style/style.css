@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /* max-width: 660px; */
+    margin: auto;
+    background-color: yellow;
+}
+
+.head{
+    background-color: green;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.head .logo img{
+    height: 95px;
+    margin: 5px;
+    background-color: rgba(150, 150, 150, 0.5);
+    border-radius: 40%;
+}
+
+.head .menu-pagi ul li{
+    display: inline;
+}
+.head .menu-pagi ul li a{
+    color: yellow;
+    text-decoration: none;
+    padding: 15px 5px 15px 5px;
+    margin: 2px;
+}
+.head .menu-pagi ul li a:hover{
+    transition: all .2s linear;
+    color: green;
+    background-color: rgba(255, 255, 0, 0.8);
+    border-radius: 10px 10px 0px 0px;
+    /* border-bottom: solid 3px black; */
+    box-shadow: 0px 2px black;
+}
+
+.corpo{
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 960px;
+    margin: auto;
+}
+
+.corpo2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.corpo .carro img{
+    height: 500px;
+}
+.esquerda{
+    background-color: blue;
+    min-height: 100px;
+    min-width: 200px;
+}
+
+.direita{
+    background-color: red;
+    min-height: 100px;
+    min-width: 200px;
+}
+
+footer{
+    background-color: green;
+    min-height: 100px;
+}
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rodape .comunic{
+    display: flex;
+}
+.rodape .comunic ul li{
+    display: flex;
+    flex-direction: column;
+}
+.rodape .comunic .locais, .rodape .comunic .menu{
+    margin: 10px 50px 10px 50px;
+}
+.rodape .comunic a{
+    color: yellow;
+    text-decoration: none;
+}
+.rodape .comunic a:hover{
+    color: white;
+    text-decoration: none;
+}
+/* @media(min-width:1px) and (max-width:460px){
+
+} */
+

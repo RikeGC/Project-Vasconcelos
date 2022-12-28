@@ -1,0 +1,1 @@
+var urlBase = 'https://localhost:44326/api';

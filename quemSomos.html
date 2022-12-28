@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="my-menu">
+            <div class="my-nav">
+                <nav class="nav-extended"
+                    style="/*background-image: url('img/mercado-1.jpg');*/ background-color: #6ccc6c;">
+                    <div style="">
+                        <div style="text-align:center; ">
+                            <img src="img/logo.png" alt="" style="max-width: 300px; margin: 5px;">
+                        </div>
+
+                        <div class="nav-wrapper">
+                            <!-- <a href="#!" class="brand-logo">Logo</a> -->
+                            <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                                class="material-icons">menu</i></a> -->
+                            <a href="#" data-target="slide-out" class="sidenav-trigger"><i
+                                    class="material-icons">menu</i></a>
+
+                            <ul class="right hide-on-med-and-down">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="quemSomos.html">Quem Somos</a></li>
+                                <li><a href="produtos.html">Produtos</a></li>
+                                <li><a href="contato.html">Contato</a></li>
+                                <li><a class="modal-trigger" href="#modal1">Login</a></li>
+                                <!-- Modal Trigger -->
+                                <!-- <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a></li> -->
+                            </ul>
+
+                            <ul id="slide-out" class="sidenav">
+                                <li>
+                                    <div class="user-view">
+                                        <div class="background">
+                                            <img src="img/mercado-2.jpg">
+                                        </div>
+                                        <a href="#user"><img class="circle" src="img/logo.png"></a>
+                                        <a href="#name"><span class="white-text name">Da'Tia</span></a>
+                                        <a href="#email"><span class="white-text email">da'tia@gmail.com</span></a>
+                                    </div>
+                                </li>
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="quemSomos.html">Quem Somos</a></li>
+                                <li><a href="produtos.html">Produtos</a></li>
+                                <li><a href="contato.html">Contato</a></li>
+                                <li><a class="modal-trigger" href="#modal1">Login</a></li>
+                                <!-- Modal Trigger -->
+                                <!-- <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <nav>
+                    <div class="nav-wrapper" style="">
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search" required>
+                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+
+                <ul class="sidenav" id="mobile-demo">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img src="img/mercado-2.jpg">
+                            </div>
+                            <a href="#user"><img class="circle" src="img/logo.png"></a>
+                            <a href="#name"><span class="white-text name">Da'Tia</span></a>
+                            <a href="#email"><span class="white-text email">hypermercado.datia@gmail.com</span></a>
+                        </div>
+                    </li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quemSomos.html">Quem Somos</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a class="modal-trigger" href="#modal1">Login</a></li>
+                    <!-- Modal Trigger -->
+                    <!-- <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a></li> -->
+                </ul>
+                <style>
+                    .nav-wrapper .input-field input[type=search] {
+                        background-color: #6ccc6c;
+                    }
+
+                    .nav-wrapper .input-field input[type=search]:focus:not(.browser-deafult) {
+                        background-color: #fffb00;
+                    }
+                </style>
+            </div>
+        </div>
+    </header>
+    <!-- <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+        <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+        <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+        <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+        <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+        <a class="carousel-item" href="#five!"><img src="img/mercado-1.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="img/mercado-2.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="img/estoque-2.jpg"></a>
+    </div> -->
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Efetuar Login</h4>
+            <p>Caso vocâ não tenha uma conta, <a href="">clique aqui!</a></p>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="usuario" type="text" class="validate">
+                    <label for="email">Usuario/Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="senha" type="password" class="validate">
+                    <label for="password">Senha</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-blue btn-flat left">Cadastre-se</a>
+                <a href="#!" class="modal-close waves-effect waves-red btn-flat">Cancelar</a>
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="login">Acessar</a>
+            </div>
+        </div>
+    </div>
+    <!-- Body Structure -->
+    <div class="container bsa">
+        <div class="row">
+            <div class="col s12 m8 offset-m1 xl7 offset-xl1">
+                <div class="section scrollspy">
+                    <h3>Quem Somos</h3>
+                    <p>&emsp;&emsp;&emsp;Surgido em Itaquaquecetuba, o Hipermercado D’átia é a primeira grande rede
+                        de Hipermercados da região formada por jovens estudantes empreendedores.
+                        Desde abril de 2020 oferecendo a melhor qualidade aos seus clientes.</p>
+                    <h4>Missão, Visão e Valores</h4>
+                    <p>&emsp;&emsp;&emsp;Ser a melhor opção para o cliente, oferecendo produtos e atendimento de
+                        qualidade e diferenciado. Oferecer a melhor geração de valores para clientes e
+                        colaboradores.
+                        Para alcançar esses objetivos com êxito, planejamos as nossas ações de
+                        acordo com os nossos valores: <br>
+                    <div class="container">
+                        <div class="">
+                            • Compromisso com o cliente;<br>
+                            • Respeito com nossos colaboradores;<br>
+                            • Integridade; <br>
+                            • Inovação e criatividade; <br>
+                            • Agilidade; <br>
+                            • Produtividade; <br>
+                            • Alta qualidade de produtos. <br>
+                        </div>
+                    </div>
+                    </p>
+                    <h4>D’átia – Do projeto estudantil aos negócios: A história por trás do
+                        sucesso.</h4>
+                    <p>&emsp;&emsp;&emsp;Fundado pelos jovens estudantes: Camila Lima, Jorge Vitor Teles e Rikelme
+                        Carneiro, o grupo D’átia surgiu de uma ideia em um projeto na faculdade.<br>
+                        &emsp;&emsp;&emsp;Estudantes de Gestão da Tecnologia da Informação da Fatec Itaquaquecetuba,
+                        os estudantes viram uma oportunidade de negócio em um projeto de
+                        programação, onde teriam que criar uma aplicação de um negócio fictício.<br>
+                        &emsp;&emsp;&emsp;A partir desse dia, a ideia passou de um mero projeto e se tornou um promissor
+                        negócio varejista na região de Itaquá, cidade que não possuía tantas opções
+                        de supermercados e variedades de produtos.<br>
+                        &emsp;&emsp;&emsp;Buscando oferecer sempre o melhor, os fundadores investiram em uma
+                        capacitação de qualidade dos seus colaboradores e na obtenção dos melhores
+                        produtos aos seus clientes.</p>
+                    <h4>Em 6 meses já conseguimos planejar e alcançar algumas metas, como:</h4>
+                    <div class="center">
+                        <img src="img/conquistas.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col hide-on-small-only m3 xl3 offset-xl1">
+                <div class="toc-wrapper pin-top" style="top: 0px;">
+                    <br>
+                    <br>
+                    <br>
+                    <div class="buysellads hide-on-small-only">
+                        <!-- CarbonAds Zone Code -->
+                        <script async="" src="//www.google-analytics.com/analytics.js"></script>
+                        <script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
+                        <script async="" type="text/javascript"
+                            src="//cdn.carbonads.com/carbon.js?serve=CKYIK27J&amp;placement=materializecss"
+                            id="_carbonads_js"></script>
+                        <div id="carbonads"><span><span class="carbon-wrap"><a
+                                        href="https://srv.carbonads.net/ads/click/x/GTND42JECE7DE53ECTSLYKQNCT7IE27ICE7DVZ3JCYYDC53YCY7DV53KCK7DV23IC67IVK7YCTSDK53IF6YIK53KC6SDT23LCWSI6K3EHJNCLSIZ?segment=placement:materializecss;"
+                                        class="carbon-img" target="_blank" rel="noopener sponsored"><img
+                                            src="https://cdn4.buysellads.net/uu/1/41369/1551199029-Adobe_Stock_260x200-2.jpg"
+                                            alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a
+                                        href="https://srv.carbonads.net/ads/click/x/GTND42JECE7DE53ECTSLYKQNCT7IE27ICE7DVZ3JCYYDC53YCY7DV53KCK7DV23IC67IVK7YCTSDK53IF6YIK53KC6SDT23LCWSI6K3EHJNCLSIZ?segment=placement:materializecss;"
+                                        class="carbon-text" target="_blank" rel="noopener sponsored">Limited time offer:
+                                        Get 10 free Adobe Stock images.</a></span>
+                                <a href="http://carbonads.net/?utm_source=materializecss&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon"
+                                    class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via
+                                    Carbon</a></span></div>
+                    </div>
+                    <div style="height: 1px;">
+                        <ul class="section table-of-contents">
+                            <li>
+                                <a href="#introduction" class="active">Introduction</a>
+                            </li>
+                            <li>
+                                <a href="#initialization" class="">Initialization</a>
+                            </li>
+                            <li>
+                                <a href="#options" class="">Options</a>
+                            </li>
+                            <li>
+                                <a href="#methods" class="">Methods</a>
+                            </li>
+                            <li>
+                                <a href="#properties">Properties</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Structure -->
+    <footer class="page-footer" style="background-color: #6bbb6b;">
+        <div class="container">
+
+            <div class="row">
+                <div class="col l12 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Ab,
+                        exercitationem eum! Laudantium deserunt facere, culpa, rem iure, sapiente ea maiores
+                        molestias
+                        itaque ex aspernatur vero? Blanditiis provident libero earum totam! Lorem ipsum dolor sit
+                        amet
+                        consectetur adipisicing elit. Recusandae dolores commodi placeat ea! Voluptatem saepe
+                        possimus
+                        iusto repellendus porro id, voluptate neque quia vero facere ipsa iure enim dolor quas.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Inicio</a></li>
+                        <li><a class="grey-text text-lighten-3" href="quemSomos.html">Quem somos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="produtos.html">Produtos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col l4 s12">
+                    <h5 class="white-text">Locais</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">São Paulo</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Mogi das Cruzes</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Guarulhos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Aruja</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Da'Tia | CNPJ: 37.243.129/0001-30 | © Copyright 2020 - Todos os direitos reservados
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript/jquery-3.5.1.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="javascript/material/carousel.js"></script>
+    <script src="javascript/material/modal.js"></script>
+    <script src="javascript/material/sidenav.js"></script>
+</body>
+
+</html>

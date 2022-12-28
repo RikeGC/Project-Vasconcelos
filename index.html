@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="my-menu">
+            <div class="my-nav">
+                <nav class="nav-extended"
+                    style="/*background-image: url('img/mercado-1.jpg');*/ background-color: #6ccc6c;">
+                    <div>
+                        <div style="text-align:center; ">
+                            <img src="img/logo.png" alt="" style="max-width: 300px; margin: 5px;">
+                        </div>
+
+                        <div class="nav-wrapper">
+                            <!-- <a href="#!" class="brand-logo">Logo</a> -->
+                            <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                                class="material-icons">menu</i></a> -->
+                            <a href="#" data-target="slide-out" class="sidenav-trigger"><i
+                                    class="material-icons">menu</i></a>
+
+                            <ul class="right hide-on-med-and-down">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="quemSomos.html">Quem Somos</a></li>
+                                <li><a href="produtos.html">Produtos</a></li>
+                                <li><a href="contato.html">Contato</a></li>
+                                <li><a class="modal-trigger" href="#modal1">Login</a></li>
+                                <!-- Modal Trigger -->
+                                <!-- <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a></li> -->
+                            </ul>
+
+                            <ul id="slide-out" class="sidenav">
+                                <li>
+                                    <div class="user-view">
+                                        <div class="background">
+                                            <img src="img/mercado-2.jpg">
+                                        </div>
+                                        <a href="#user"><img class="circle" src="img/logo.png"></a>
+                                        <a href="#name"><span class="white-text name">Da'Tia</span></a>
+                                        <a href="#email"><span class="white-text email">da'tia@gmail.com</span></a>
+                                    </div>
+                                </li>
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="quemSomos.html">Quem Somos</a></li>
+                                <li><a href="produtos.html">Produtos</a></li>
+                                <li><a href="contato.html">Contato</a></li>
+                                <li><a class="modal-trigger" href="#modal1">Login</a></li>
+                                <!-- Modal Trigger -->
+                                <!-- <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <nav>
+                    <div class="nav-wrapper" style="">
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search" required>
+                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+
+                <ul class="sidenav" id="mobile-demo">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img src="img/mercado-2.jpg">
+                            </div>
+                            <a href="#user"><img class="circle" src="img/logo.png"></a>
+                            <a href="#name"><span class="white-text name">Da'Tia</span></a>
+                            <a href="#email"><span class="white-text email">hypermercado.datia@gmail.com</span></a>
+                        </div>
+                    </li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quemSomos.html">Quem Somos</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a class="modal-trigger" href="#modal1">Login</a></li>
+                    <!-- Modal Trigger -->
+                    <!-- <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a></li> -->
+                </ul>
+                <style>
+                    .nav-wrapper .input-field input[type=search] {
+                        background-color: #6ccc6c;
+                    }
+
+                    .nav-wrapper .input-field input[type=search]:focus:not(.browser-deafult) {
+                        background-color: #fffb00;
+                    }
+                </style>
+            </div>
+        </div>
+    </header>
+    <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#five!"><img src="img/mercado-1.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="img/mercado-2.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="img/estoque-2.jpg"></a>
+    </div>
+    <!-- Body Structure -->
+    
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Efetuar Login</h4>
+            <p>Caso vocâ não tenha uma conta, <a href="">clique aqui!</a></p>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="usuario" type="text" class="validate">
+                    <label for="email">Usuario/Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="senha" type="password" class="validate">
+                    <label for="password">Senha</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-blue btn-flat left">Cadastre-se</a>
+                <a href="#!" class="modal-close waves-effect waves-red btn-flat">Cancelar</a>
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="login">Acessar</a>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer" style="background-color: #6bbb6b;">
+        <div class="container">
+
+            <div class="row">
+                <div class="col l12 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Ab,
+                        exercitationem eum! Laudantium deserunt facere, culpa, rem iure, sapiente ea maiores
+                        molestias
+                        itaque ex aspernatur vero? Blanditiis provident libero earum totam! Lorem ipsum dolor sit
+                        amet
+                        consectetur adipisicing elit. Recusandae dolores commodi placeat ea! Voluptatem saepe
+                        possimus
+                        iusto repellendus porro id, voluptate neque quia vero facere ipsa iure enim dolor quas.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Inicio</a></li>
+                        <li><a class="grey-text text-lighten-3" href="quemSomos.html">Quem somos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="produtos.html">Produtos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col l4 s12">
+                    <h5 class="white-text">Locais</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">São Paulo</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Mogi das Cruzes</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Guarulhos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Aruja</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Da'Tia | CNPJ: 37.243.129/0001-30 | © Copyright 2020 - Todos os direitos reservados
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript/jquery-3.5.1.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="javascript/material/carousel.js"></script>
+    <script src="javascript/material/modal.js"></script>
+    <script src="javascript/material/sidenav.js"></script>
+</body>
+
+</html>
